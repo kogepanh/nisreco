@@ -12,4 +12,4 @@ jobs:
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          text: Develop Branch に Merge されました！ Pull しましょう！
+          text: Develop Branch に Merge されました！ git pull origin develop しましょう！
