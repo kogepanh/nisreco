@@ -1,6 +1,6 @@
 # NISLAB 議事録作成アプリ
 
-NISLAB の議事録作成アプリです
+NISLAB の議事録作成アプリです！
 
 ## Build Setup
 
