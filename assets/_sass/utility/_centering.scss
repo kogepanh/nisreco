@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+//====================================
+//  Centering
+//====================================
+
+.u-centering {
+  display: flex;
+
+  &:not(.-fxd-c) {
+    &.-tb {
+      align-items: center;
+    }
+
+    &.-lr {
+      justify-content: center;
+    }
+
+    &.-fd {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.-fxd-c {
+    &.-tb {
+      justify-content: center;
+    }
+
+    &.-lr {
+      align-items: center;
+    }
+
+    &.-fd {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
