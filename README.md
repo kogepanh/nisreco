@@ -1,5 +1,7 @@
 # NISLAB 議事録作成アプリ
 
+NISLAB の議事録作成アプリです！！
+
 ## Build Setup
 
 ```bash
@@ -18,4 +20,5 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
 # nisreco
