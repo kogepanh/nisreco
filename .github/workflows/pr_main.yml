@@ -1,8 +1,8 @@
-name: PR Develop
+name: PR Main
 on:
   pull_request:
     branches:
-      - develop
+      - main
 jobs:
   Notify_Slack:
     runs-on: ubuntu-latest
@@ -12,4 +12,4 @@ jobs:
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          text: Develop Branch に PR されました！ Review しましょう！
+          text: Main Branch に PR されました！ Review しましょう！

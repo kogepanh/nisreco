@@ -1,6 +1,6 @@
-name: PR Develop
+name: Push Develop
 on:
-  pull_request:
+  push:
     branches:
       - develop
 jobs:
@@ -12,4 +12,4 @@ jobs:
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          text: Develop Branch に PR されました！ Review しましょう！
+          text: Develop Branch に Merge されました！ Pull しましょう！
