@@ -4,7 +4,7 @@ on:
     branches:
       - develop
 jobs:
-  Notify Slack:
+  Notify_Slack:
     runs-on: ubuntu-latest
     steps:
       - name: Slack Notification
