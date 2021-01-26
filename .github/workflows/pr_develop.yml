@@ -1,0 +1,15 @@
+name: PR Develop
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  Notify_Slack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notification
+        uses: tokorom/action-slack-incoming-webhook@main
+        env:
+          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          text: Develop Branch に PR されました！
