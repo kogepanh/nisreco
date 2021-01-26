@@ -1,4 +1,4 @@
-# nuxt-templete
+# NISLAB 議事録作成アプリ
 
 ## Build Setup
 
