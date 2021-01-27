@@ -12,4 +12,4 @@ jobs:
         env:
           INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          text: Main Branch に PR されました！ Review しましょう！
+          text: "@channel Main Branch に PR されました！ Review しましょう！"
