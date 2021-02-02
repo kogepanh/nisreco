@@ -8,8 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slack Notification
-        uses: tokorom/action-slack-incoming-webhook@main
-        env:
-          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        uses: 8398a7/action-slack@v3.8.0
         with:
-          text: "@channel Develop Branch に PR されました！ Review をお願いします！"
+          status: ${{ job.status }}
+          author_name: DevelopブランチにPRされました！Reviewをお願いします！
+          mention: "channel"
+          if_mention: always
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: always()
