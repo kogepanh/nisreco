@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "j_last_name": "中井",
+      "j_first_name": "綾一",
+      "student_id": "1316200100",
+      "team": "N",
+      "roll": [
+        "promotion"
+      ],
+      "research_theme": "知らん"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "N"
+    },
+    {
+      "id": 2,
+      "name": "I"
+    },
+    {
+      "id": 3,
+      "name": "S"
+    }
+  ],
+  "meetings": [
+    {
+      "id": 1,
+      "team": "N",
+      "writer": 1
+    }
+  ]
+}
